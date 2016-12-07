@@ -1,14 +1,14 @@
-= berl32
+# berl32
 
 Quick and Dirty Crockford Base32 Erlang Implementation
 
-== Build
+## Build
 
-    $ rebar3 compile
+	$ rebar3 compile
 	
-== Encoding
+## Encoding
 
-    > berl32:encode("*").
+	> berl32:encode("*").
 	{ok,<<"1A">>}
 	
 	> berl32:encode(<<"*">>).
@@ -23,7 +23,7 @@ Quick and Dirty Crockford Base32 Erlang Implementation
 	> berl32:encode(<<18446744073709551615:64/integer>>).
 	{ok, <<"FZZZZZZZZZZZZ">>}
 	
-== Decoding
+## Decoding
 
 	> berl32:decode(<<"1A">>).
 	{ok,<<"*">>}
@@ -34,7 +34,7 @@ Quick and Dirty Crockford Base32 Erlang Implementation
 	> berl32:decode(<<"FZZZZZZZZZZZZZZ">>).
 	{ok,<<"ÿÿÿÿÿÿÿÿÿ">>}
 
-== Todo
+## Todo
 
  * add checksum/control character support
  * add more unit test
