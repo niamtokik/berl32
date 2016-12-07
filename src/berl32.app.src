@@ -1,0 +1,15 @@
+{application, berl32,
+ [{description, "crockfork base32 erlang implementation"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, ["Mathieu Kerjouan"]},
+  {licenses, ["ISC"]},
+  {links, []}
+ ]}.
